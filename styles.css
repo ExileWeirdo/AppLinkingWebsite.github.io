@@ -141,14 +141,14 @@ button:hover{
 }
 
 .imgDocs{
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 0.625em;
+    padding-top: 0.6250em;
 }
 
 
 .imgSkola24{
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding-bottom: 0.3125em;
+    padding-top: 0.3125em;
 }
 
 h1{
@@ -185,12 +185,12 @@ h1{
     }
 
     .buttonEhrensvärdska{
-        width: 200px;
+        width: 12.5em;
         margin-top: 1rem;
     }
 
     .minSamling{
-        margin-right: 0px;
+        margin-right: 0;
     }
 
     .buttonNamn{
@@ -198,37 +198,21 @@ h1{
         height: 3.5rem;
     }
 
-    .appsContainer button{
-        height: 150px;
-        width: 150px;
+    .appsContainer button, .appsContainer img{
+        height: 9.375rem;
+        width: 9.375rem;
     }
 
-    .appsContainer img{
-        height: 150px;
-        width: 150px;
+    .imgGmail, .imgClassroom{
+        padding-left: 0.625em;
+        padding-right: 0.625em;
     }
-
-    .imgGmail{
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .imgClassroom{
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
 }
 
 @media only screen and (max-width: 1200px){
-    .appsContainer button{
-        height: 125px;
-        width: 125px;
-    }
-    
-    .appsContainer img{
-        height: 125px;
-        width: 125px;
+    .appsContainer button, .appsContainer img{
+        height: 7.813rem;
+        width: 7.813rem;
     }
 
     
@@ -250,21 +234,16 @@ h1{
 
     .search-bar{
         width: 60%;
-        padding: 5px 10px;
+        padding: 0.3125em 0.625em;
     }
 
     
 }
 
 @media only screen and (max-width: 600px){
-    .appsContainer button{
-        width: 80px;
-        height: 80px;
-    }
-
-    .appsContainer img{
-        width: 80px;
-        height: 80px;
+    .appsContainer button, .appsContainer img{
+        width: 5rem;
+        height: 5rem;
     }
 
     .buttonEhrensvärdska{
@@ -273,19 +252,14 @@ h1{
     }
 
     .search-bar{
-        padding: 0em 15px;
+        padding: 0em 0.9375em;
     }
 }
 
 @media only screen and (max-width: 376px){
-    .appsContainer button{
-        height: 70px;
-        width: 70px;
-    }
-
-    .appsContainer img{
-        height: 70px;
-        width: 70px;
+    .appsContainer button .appsContainer img{
+        height: 4.375rem;
+        width: 4.375rem;
     }
 
     .appsContainer{
