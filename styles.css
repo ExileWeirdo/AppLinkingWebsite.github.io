@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100svh;
+    background: #2a2a2a;
+}
+
+.navbarElements {
+    display: flex;
+    justify-content: space-between;   
+    box-shadow: 0 0 20px hsl(0 0% 0%);
+    position: relative;
+}
+
+
+.buttonEhrensvärdska {
+    align-items: center;
+    text-decoration: none;
+    color: #cac7ff;
+    background: #18191A;
+    border: 2px solid #242526;
+    font-size: clamp(0.5rem, 0.44rem + 0.3vw, 0.8rem);
+    margin: 0.5rem;   
+    border-radius: 25px;
+    padding: 1em;
+    box-shadow: 0 18px 24px 0 rgba(0,0,0,.2);
+
+
+}
+
+.EhrensvärdskaLogo {
+    vertical-align: middle;
+
+}
+
+.minSamling {   
+    color: #cac7ff;
+    font-size: clamp(1.4rem, 1.08rem + 1.6vw, 3rem);
+    font-family: 'Courier New', Courier, monospace;
+    position:absolute;
+    top:50%;
+    left:50%;
+    translate:-50% -50%;
+}
+
+.buttonNamn {
+    width: 5rem;
+    height: 3rem;
+    color: #cac7ff;
+    background: #18191A;
+    border: 2px solid #242526;   
+    font-size: clamp(0.7rem, 0.58rem + 0.6vw, 1.3rem);
+    border-radius: 25px;
+    box-shadow: 0 18px 24px 0 rgba(0,0,0,.2);
+    margin: 1.2rem 2rem;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background: #2a2a2a;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+}
+
+.search-bar:hover{
+    cursor: pointer;
+}
+
+.search-bar{
+    width: 100%;
+    margin-top: 4.7rem;
+    max-width: 42.5rem;
+    background: #807f80;
+    border-radius: 60px;
+    padding: 0.5rem 2rem;
+}
+
+.search-bar input{
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 1.5rem 1.25px;
+    font-size: 1.25rem;
+    color: #cac7ff;
+}
+
+::placeholder{
+    cursor: pointer;
+    color: #cac7ff;
+}
+
+.appsContainer{
+    width: 60%;
+    margin-top: 2rem;
+    margin-inline: auto;    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    row-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+img {   
+    object-fit: contain;
+    max-width: 100%;
+}
+
+button:hover{
+    box-shadow: 0 18px 24px 0 rgba(0,0,0,2);
+    cursor: pointer;
+}
+
+.appsContainer button:hover{
+    background: #807f80;
+}
+
+.appsContainer button{
+    border: none;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 12.5rem;
+    height: 12.5rem;
+    background: #5A5A5A;
+}
+
+.imgDocs{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+.imgSkola24{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+h1{
+    color: #cac7ff;
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+}
+
+.hidden{
+    display: none;
+}
+
+.footerBackground{
+    position: sticky;
+    bottom: 0;
+    background: #2A2A2A;
+    min-height: 50px;
+    margin-top: auto;
+    box-shadow: 0 0 10px hsl(0 0% 0%);
+}
+
+.footerText{
+    position: sticky;
+    color:  #cac7ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(1.2rem, 1.04rem + 0.8vw, 2rem);
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 1600px){
+
+    .search-bar{
+        width: 75%;
+    }
+
+    .buttonEhrensvärdska{
+        width: 200px;
+        margin-top: 1rem;
+    }
+
+    .minSamling{
+        margin-right: 0px;
+    }
+
+    .buttonNamn{
+        width: 8rem;
+        height: 3.5rem;
+    }
+
+    .appsContainer button{
+        height: 150px;
+        width: 150px;
+    }
+
+    .appsContainer img{
+        height: 150px;
+        width: 150px;
+    }
+
+    .imgGmail{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .imgClassroom{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px){
+    .appsContainer button{
+        height: 125px;
+        width: 125px;
+    }
+    
+    .appsContainer img{
+        height: 125px;
+        width: 125px;
+    }
+
+    
+
+    
+}
+
+@media only screen and (max-width: 767px){
+    .buttonEhrensvärdska{
+        width: 6.7rem;
+        height: 5.6rem;
+    }
+    
+    .buttonNamn{
+        height: 3.1rem;
+        width: 4.3rem;
+        margin-top: 2rem;
+    }
+
+    .search-bar{
+        width: 60%;
+        padding: 5px 10px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 600px){
+    .appsContainer button{
+        width: 80px;
+        height: 80px;
+    }
+
+    .appsContainer img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .buttonEhrensvärdska{
+        width: 6rem;
+        height: 5.2rem;
+    }
+}
+
+@media only screen and (max-width: 376px){
+    .appsContainer button{
+        height: 70px;
+        width: 70px;
+    }
+
+    .appsContainer img{
+        height: 70px;
+        width: 70px;
+    }
+
+    .appsContainer{
+        max-width: 100%;
+    }
+
+    .EhrensvärdskaLogo {
+        height: 1.4rem;
+        width: 1.4rem;
+    }
+
+    .buttonEhrensvärdska{
+        height: 4.5rem;
+        width: 5rem;
+       
+    }
+
+ 
+    .buttonNamn{
+        width: 3.9rem;
+        height: 2.9rem;
+        margin-bottom: 0;
+        margin-top: 1.5rem;
+        margin-right: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 321px){
+    .buttonNamn{
+        margin-right: 0.8rem;
+    }
+
+    .buttonEhrensvärdska{
+        width: 4.5rem
+    }
+}
+
