@@ -94,7 +94,7 @@ body {
     border: 0;
     outline: none;
     padding: 1.5rem 1.25px;
-    font-size: 1.25rem;
+    font-size: clamp(0.75rem, 0.65rem + 0.5vw, 1.25rem);
     color: #cac7ff;
 }
 
@@ -270,6 +270,10 @@ h1{
     .buttonEhrensvärdska{
         width: 6rem;
         height: 5.2rem;
+    }
+
+    .search-bar{
+        padding: 0em 15px;
     }
 }
 
